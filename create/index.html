@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="Description" content=""/>
+	<meta name="DC.description" content=""/>
+	<meta name="Keywords" content=""/>
+	<meta name="DC.subject" content=""/>
+	<meta name="format-detection" content="telephone=yes"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="DC.title" content=""/>
+	<title>Page Template</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/jquery.bxslider.css">
+	<link rel="stylesheet" href="/assets/css/main.min.css">
+</head>
+<style type="text/css">
+.loaded .preload-cover{
+	visibility:hidden;
+	opacity:0;
+}
+.loaded .loader{
+	visibility:hidden;
+	opacity:0;
+}
+.preload-cover{
+	position:fixed;width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background:#000b18;
+	display:flex;
+	-ms-align-items:center;
+	align-items:center;
+	justify-content:center;
+	z-index:10000;
+	visibility:visible;
+	transition:all 0.5s 0.6s ease;
+}
+.loader,.loader:before,.loader:after{
+	border:2px solid transparent;
+	border-radius:50%;
+	border-top-color:#fff;
+	transition:all 0.5s ease
+}
+.loader{
+	width:100px;
+	height:100px;
+	position:relative;
+	animation:spin 1s infinite linear;
+}
+.loader:before,.loader:after{
+	content:'';
+	position:absolute
+}
+.loader:before{
+	top:10px;
+	bottom:10px;
+	left:10px;
+	right:10px;
+	animation:spin 2s infinite linear;
+}
+.loader:after{
+	top:22px;
+	bottom:22px;
+	left:22px;
+	right:22px;
+	animation:spin 1s infinite linear;
+}
+
+@-webkit-keyframes spin {
+	from {
+		transform:rotate(0deg);  
+	}
+	to { 
+		transform:rotate(360deg);
+	}
+}
+
+@-o-keyframes spin {
+	from { 
+		transform:rotate(0deg); 
+	}
+	to {
+		transform:rotate(360deg);
+	} 
+}
+
+@-moz-keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	} 
+}
+
+@keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+</style>
+	<body>
+		<div class="preload-cover">
+			<div class="loader"></div>
+		</div><header class="headTwo">
+			<a href="/"><div class="logo bg_con"></div></a>
+			<div class="hamburger-box">
+				<div class="line l1"></div>
+				<div class="line l2"></div>
+				<div class="line l3"></div>
+			</div>
+		</header><div class="modal-menu fixed100">
+			<div class="holder">
+				<div class="typical-scroll-block m1 scrollbar-offset-minus-right">
+					<div class="cover-block">
+						<div class="item-block">
+							<div class="item-box">
+								<a href="/"><div class="item tr">
+									<h2 class="menu-item">Главная</h2>
+									<p class="item-info">Создание, поддержка, продвижение</p>
+								</div></a>
+							</div><div class="item-box">
+								<a href="/create"><div class="item tr">
+									<h2 class="menu-item">Создание сайтов</h2>
+									<p class="item-info">Быстрые, удобные и оптимизированные</p>
+								</div></a>
+							</div><div class="item-box">
+								<a href="/support"><div class="item tr">
+									<h2 class="menu-item">Поддержка</h2>
+									<p class="item-info">Своевременно оказываем помощь</p>
+								</div></a>
+							</div><div class="item-box">
+								<a href="/promotion"><div class="item tr">
+									<h2 class="menu-item">Продвижение</h2>
+									<p class="item-info">Контекстная реклама и SEO оптимизация</p>
+								</div></a>
+							</div><div class="item-box">
+								<a href="/design"><div class="item tr">
+									<h2 class="menu-item">Дизайн</h2>
+									<p class="item-info">Индивидуальный и креативный</p>
+								</div></a>
+							</div>
+						</div><div class="item-block second">
+							<div class="item-box fbk">
+								<div class="item tr">
+									<h2 class="menu-item">Контакты</h2>
+									<p class="item-info">Связаться с нами, оставить сообщение</p>
+								</div>
+							</div><div class="item-box">
+								<div class="item rel">
+									<p class="phone">+7 928 637 20 19</p>
+									<p class="phone sec">+7 929 858 95 57</p>
+									<p class="item-info">Ежедневно с <span class="num">9:00</span> до <span class="num">21:00</span></p>
+									<div class="icon phone bg_con"></div>
+								</div>
+							</div><div class="item-box">
+								<div class="item rel">
+									<p class="mail">dev@iphylosophy.ru</p>
+									<p class="item-info">Электронная почта для вопросов и предложений</p>
+									<div class="icon mail bg_con"></div>
+								</div>
+							</div><div class="item-box">
+								<div class="item rel">
+									<a href="https://vk.com/iphylosophy"><div class="social-img vk ibm bg_con"></div></a>
+									<a href="https://www.instagram.com/iphylosophy.ru/"><div class="social-img inst ibm bg_con"></div></a>
+									<p class="item-info">Мы в социальных сетях</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><div class="modal-feedback">
+			<div class="modal-holder">
+				<div class="typical-scroll-block m2 scrollbar-offset-minus-right">
+					<div class="cover-block">
+						<div class="feedback-holder">
+							<h2 class="menu-item">Контакты</h2>
+							<form>
+								<!-- Hidden Required Fields -->
+								<input type="hidden" name="project_name" value="Философия Идиллии">
+								<input type="hidden" name="admin_email" value="dev@iphylosophy.ru">
+								<input type="hidden" name="form_subject" value="Контактная информация клиента">
+								<!-- END Hidden Required Fields -->
+								<input type="text" name="Имя" placeholder="Имя" required><br>
+								<input type="text" name="E-mail" placeholder="E-mail"><br>
+								<input type="text" name="Телефон" placeholder="Телефон" required><br>
+								<textarea name="Сообщение" placeholder="Сообщение"></textarea><br>
+								<button>Отправить сообщение</button>
+							</form>
+						</div><div class="item-block second">
+								<div class="item-box">
+									<div class="item rel">
+										<p class="phone">+7 928 637 20 19</p>
+										<p class="phone sec">+7 929 858 95 57</p>
+										<p class="item-info">Ежедневно с <span class="num">9:00</span> до <span class="num">21:00</span></p>
+										<div class="icon phone bg_con"></div>
+									</div>
+								</div><div class="item-box">
+									<div class="item rel">
+										<p class="mail">dev@iphylosophy.ru</p>
+										<p class="item-info">Электронная почта для вопросов и предложений</p>
+										<div class="icon mail bg_con"></div>
+									</div>
+								</div><div class="item-box">
+									<div class="item rel">
+										<a href="https://vk.com/iphylosophy"><div class="social-img vk ibm bg_con"></div></a>
+										<a href="https://www.instagram.com/iphylosophy.ru/"><div class="social-img inst ibm bg_con"></div></a>
+										<p class="item-info">Мы в социальных сетях</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div><div class="hideline"></div><div class="close-feedback"></div>
+		</div><section id="particles-js2" class="l2-head bg_cov">
+			<h1 class="l2-title">Создание Сайтов</h1>
+		</section><section class="create-about cr1">
+			<div class="ca-holder bg_con">
+				<div class="ca-image bg_con"></div>
+				<div class="ca-cover">
+					<div class="ca-block">
+						<h2 class="create-page-title">Быстрые и Удобные Сайты</h2>
+						<p class="create-page-info">Сайт — лицо компании в цифровом пространстве, неотъемлемый инструмент в арсенале каждого успешного предпринимателя. Важно правильно презентовать компанию, и сайт лучшее решение этого вопроса. Наши инновационные и высокотехнологичные сайты, выполняют поставленные задачи. Разрабатывая сайты, уделяем большое внимание оптимизации как клиентской так и серверной стороны проекта. Мы применяем только собственные решения, и поэтому каждый наш сайт уникальный, как в плане дизайна, так и с технологичной точки зрения.</p>
+					</div><div class="promo-holder bbox">
+						<div class="corner-line1"></div>
+						<div class="corner-line2"></div>
+						<p class="promo-info">Наши сайты оптимизированы под все существующие устройства. Время загрузки страниц минимальное</p>
+					</div>
+				</div>
+			</div>
+		</section><section class="site-price bg_cov">
+			<div class="price-holder">
+				<h2 class="create-page-title cr1">Разработка сайтов</h2>
+				<div class="price-cover">
+					<div class="price-item i1 bbox">
+						<div class="item-holder">
+							<h3 class="item-title">Лэндинг</h3>
+							<p class="item-desc">Сайт состоящий из одной страницы, задачей которого является конвертация посетителя в покупателя или клиента компании. Служит для продвижения конкретного товара или услуги компании.</p>
+								<div class="price-line"><div class="time bg_con"></div><p class="item-info">от одной недели</p><div class="rate bg_con"></div><p class="item-info">от <span class="prnum">15 000</span></p></div>
+							<div class="button cr1">
+								<div class="slide1 abs100 bbox">
+									<p class="button-info">Заказать сайт</p><div class="helper"></div>
+									</div><div class="slide2 abs100 bbox">
+									<p class="button-info">Заказать сайт</p><div class="helper"></div>
+								</div>
+							</div>
+						</div><div class="item-cover"></div>
+					</div><div class="price-item i2 bbox">
+						<div class="item-holder">
+							<h3 class="item-title">Визитка</h3>
+							<p class="item-desc">Небольшой сайт, который содержит основную информацию о компании, товарах или услугах. Служит для первичного ознакомления пользователей с товарами или услугами компании.</p>
+							<div class="price-line"><div class="time bg_con"></div><p class="item-info">от двух недель</p><div class="rate bg_con"></div><p class="item-info">от <span class="prnum">20 000</span></p></div>
+							<div class="button cr2">
+								<div class="slide1 abs100 bbox">
+									<p class="button-info">Заказать сайт</p><div class="helper"></div>
+									</div><div class="slide2 abs100 bbox">
+									<p class="button-info">Заказать сайт</p><div class="helper"></div>
+								</div>
+							</div>
+						</div><div class="item-cover"></div>
+					</div><div class="price-item i3 bbox">
+						<div class="item-holder">
+							<h3 class="item-title">Каталог</h3>
+							<p class="item-desc">Сайт который помимо информации о компании содержит в себе каталог продукции или предоставляемых услуг с изображением и описанием.</p>
+							<div class="price-line"><div class="time bg_con"></div><p class="item-info">от одного месяца</p><div class="rate bg_con"></div><p class="item-info">от <span class="prnum">50 000</span></p></div>
+							<div class="button cr3">
+								<div class="slide1 abs100 bbox">
+									<p class="button-info">Заказать сайт</p><div class="helper"></div>
+									</div><div class="slide2 abs100 bbox">
+									<p class="button-info">Заказать сайт</p><div class="helper"></div>
+								</div>
+							</div>
+						</div><div class="item-cover"></div>
+					</div><div class="price-item i4 bbox">
+						<div class="item-holder">
+							<h3 class="item-title">Интернет-магазин</h3>
+							<p class="item-desc">Магазин содержит в себе каталог услуг или продукции с возможностью автоматизации продаж, при помощи модулей онлайн оплаты.</p>
+							<div class="price-line"><div class="time bg_con"></div><p class="item-info">от одного месяца</p><div class="rate bg_con"></div><p class="item-info">от <span class="prnum">100 000</span></p></div>
+							<div class="button cr4">
+								<div class="slide1 abs100 bbox">
+									<p class="button-info">Заказать сайт</p><div class="helper"></div>
+									</div><div class="slide2 abs100 bbox">
+									<p class="button-info">Заказать сайт</p><div class="helper"></div>
+								</div>
+							</div>
+						</div><div class="item-cover"></div>
+					</div>
+				</div>
+			</div>
+		</section><section class="why">
+			<div class="why-holder bg_con">
+				<h2 class="create-page-title">Почему стоит заказать у нас?</h2>
+				<div class="why-cover">
+					<div class="why-box">
+						<h3 class="whywee">Мы делаем:</h3>
+						<div class="why-line">
+							<div class="why-icon bg_con"><div class="icon chek"></div></div><p class="why-info">Сайты любого типа</p>
+						</div><div class="why-line">
+							<div class="why-icon bg_con"><div class="icon chek"></div></div><p class="why-info">Уникальный дизайн</p>
+						</div><div class="why-line">
+							<div class="why-icon bg_con"><div class="icon chek"></div></div><p class="why-info">Адаптивность и кроссбраузерность</p>
+						</div><div class="why-line">
+							<div class="why-icon bg_con"><div class="icon chek"></div></div><p class="why-info">Удобную систему управления</p>
+						</div><div class="why-line">
+							<div class="why-icon bg_con"><div class="icon chek"></div></div><p class="why-info">Размещение сайта на собственном хостинге</p>
+						</div><div class="why-line">
+							<div class="why-icon bg_con"><div class="icon chek"></div></div><p class="why-info">Корпоративную почту</p>
+						</div>
+					</div><div class="why-box">
+						<h3 class="whywee">Мы гарантируем:</h3>
+						<div class="why-line">
+							<div class="why-icon bg_con"><div class="icon cr1"></div></div><p class="why-info">Совместимость со всеми устройствами</p>
+						</div><div class="why-line">
+							<div class="why-icon bg_con"><div class="icon cr2"></div></div><p class="why-info">Стабильную работу сайта</p>
+						</div><div class="why-line">
+							<div class="why-icon bg_con"><div class="icon cr3"></div></div><p class="why-info">Высокую степень оптимизации</p>
+						</div><div class="why-line">
+							<div class="why-icon bg_con"><div class="icon cr4"></div></div><p class="why-info">Релиз проектов в назначенные сроки</p>
+						</div><div class="why-line">
+							<div class="why-icon bg_con"><div class="icon cr5"></div></div><p class="why-info">Валидный код по стандартам <span class="prnum">W3C</span></p>
+						</div><div class="why-line">
+							<div class="why-icon bg_con"><div class="icon cr6"></div></div><p class="why-info">Правильную структуру для продвижения</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><section class="create-stage">
+			<div class="stage-holder">
+				<h2 class="create-page-title">Этапы разработки сайта</h2>
+				<div class="stage-cover">
+					<div class="stage-item">
+						<div class="stage-image bg_con">
+							<div class="stage-icon s1 bg_con"></div>
+						</div><h3 class="stage-step">Подготовка</h3><p class="stage-info">Определение требований и задач проекта. Подписание договора.</p>
+					</div><div class="stage-item">
+						<div class="stage-image bg_con">
+							<div class="stage-icon s2 bg_con"></div>
+						</div><h3 class="stage-step">Проектирование</h3><p class="stage-info">Разработка структуры сайта, создание прототипов, разработка технического задания.</p>
+					</div><div class="stage-item">
+						<div class="stage-image bg_con">
+							<div class="stage-icon s3 bg_con"></div>
+						</div><h3 class="stage-step">Дизайн</h3><p class="stage-info">Создание макетов интерфейса, утверждение дизайна.</p>
+					</div><div class="stage-item">
+						<div class="stage-image bg_con">
+							<div class="stage-icon s4 bg_con"></div>
+						</div><h3 class="stage-step">Разработка</h3><p class="stage-info">Техническая реализация проекта, верстка, разработка функционала сайта.</p>
+					</div><div class="stage-item">
+						<div class="stage-image bg_con">
+							<div class="stage-icon s5 bg_con"></div>
+						</div><h3 class="stage-step">Запуск</h3><p class="stage-info">Наполнение контентом. Тестирование и размещение сайта на сервере.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-holder">
+				<div class="footer-va ibm">
+					<div class="footer-item">
+						<a href="/"><div class="logo bg_con"></div></a>
+						<p class="desc">Создание, продвижение и поддержка сайтов</p>
+						<p class="cop">&#169; <span class="birthday">2016</span> Философия Идиллии</p>
+					</div><div class="footer-item contacts">
+						<div class="phone-box">
+							<div class="item-line">
+								<div class="icon phone bg_con"></div><a href="" class="number">+7 928 637 20 19</a>
+							</div><div class="item-line">
+								<a href="" class="number">+7 929 858 95 57</a>
+							</div>
+						</div><div class="mail-box">
+							<div class="icon mail bg_con"></div><a href="" class="mail">dev@iphylosophy.ru</a>
+						</div>
+					</div><div class="footer-item social">
+						<a href="https://vk.com/iphylosophy"><div class="item-line">
+							<div class="icon vk bg_con"></div><p class="social-link">Наша группа в Вконтакте</p>
+						</div></a><a href="https://www.instagram.com/iphylosophy.ru/"><div class="item-line">
+							<div class="icon inst bg_con"></div><p class="social-link">Инстаграмм</p>
+						</div></a>
+					</div><div class="footer-item">
+						<p class="feedback">Обратная связь</p>
+					</div>
+				</div><div class="helper"></div>
+			</div>
+		</footer>
+		
+		<script src="/assets/js/scripts.min.js"></script>
+	</body>
+</html>

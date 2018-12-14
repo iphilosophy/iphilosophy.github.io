@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="Description" content=""/>
+	<meta name="DC.description" content=""/>
+	<meta name="Keywords" content=""/>
+	<meta name="DC.subject" content=""/>
+	<meta name="format-detection" content="telephone=yes"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="DC.title" content=""/>
+	<title>Page Template</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/jquery.bxslider.css">
+	<link rel="stylesheet" href="/assets/css/main.min.css">
+</head>
+<style type="text/css">
+.loaded .preload-cover{
+	visibility:hidden;
+	opacity:0;
+}
+.loaded .loader{
+	visibility:hidden;
+	opacity:0;
+}
+.preload-cover{
+	position:fixed;width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background:#000b18;
+	display:flex;
+	-ms-align-items:center;
+	align-items:center;
+	justify-content:center;
+	z-index:10000;
+	visibility:visible;
+	transition:all 0.5s 0.6s ease;
+}
+.loader,.loader:before,.loader:after{
+	border:2px solid transparent;
+	border-radius:50%;
+	border-top-color:#fff;
+	transition:all 0.5s ease
+}
+.loader{
+	width:100px;
+	height:100px;
+	position:relative;
+	animation:spin 1s infinite linear;
+}
+.loader:before,.loader:after{
+	content:'';
+	position:absolute
+}
+.loader:before{
+	top:10px;
+	bottom:10px;
+	left:10px;
+	right:10px;
+	animation:spin 2s infinite linear;
+}
+.loader:after{
+	top:22px;
+	bottom:22px;
+	left:22px;
+	right:22px;
+	animation:spin 1s infinite linear;
+}
+
+@-webkit-keyframes spin {
+	from {
+		transform:rotate(0deg);  
+	}
+	to { 
+		transform:rotate(360deg);
+	}
+}
+
+@-o-keyframes spin {
+	from { 
+		transform:rotate(0deg); 
+	}
+	to {
+		transform:rotate(360deg);
+	} 
+}
+
+@-moz-keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	} 
+}
+
+@keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+</style>
+	<body>
+		<div class="preload-cover">
+		<div class="loader"></div>
+	</div><header class="headTwo">
+			<a href="/"><div class="logo bg_con"></div></a>
+			<div class="hamburger-box">
+				<div class="line l1"></div>
+				<div class="line l2"></div>
+				<div class="line l3"></div>
+			</div>
+		</header><div class="modal-menu fixed100">
+			<div class="holder">
+				<div class="typical-scroll-block m1 scrollbar-offset-minus-right">
+					<div class="cover-block">
+						<div class="item-block">
+							<div class="item-box">
+								<a href="/"><div class="item tr">
+									<h2 class="menu-item">Главная</h2>
+									<p class="item-info">Создание, поддержка, продвижение</p>
+								</div></a>
+							</div><div class="item-box">
+								<a href="/create"><div class="item tr">
+									<h2 class="menu-item">Создание сайтов</h2>
+									<p class="item-info">Быстрые, удобные и оптимизированные</p>
+								</div></a>
+							</div><div class="item-box">
+								<a href="/support"><div class="item tr">
+									<h2 class="menu-item">Поддержка</h2>
+									<p class="item-info">Своевременно оказываем помощь</p>
+								</div></a>
+							</div><div class="item-box">
+								<a href="/promotion"><div class="item tr">
+									<h2 class="menu-item">Продвижение</h2>
+									<p class="item-info">Контекстная реклама и SEO оптимизация</p>
+								</div></a>
+							</div><div class="item-box">
+								<a href="/design"><div class="item tr">
+									<h2 class="menu-item">Дизайн</h2>
+									<p class="item-info">Индивидуальный и креативный</p>
+								</div></a>
+							</div>
+						</div><div class="item-block second">
+							<div class="item-box fbk">
+								<div class="item tr">
+									<h2 class="menu-item">Контакты</h2>
+									<p class="item-info">Связаться с нами, оставить сообщение</p>
+								</div>
+							</div><div class="item-box">
+								<div class="item rel">
+									<p class="phone">+7 928 637 20 19</p>
+									<p class="phone sec">+7 929 858 95 57</p>
+									<p class="item-info">Ежедневно с <span class="num">9:00</span> до <span class="num">21:00</span></p>
+									<div class="icon phone bg_con"></div>
+								</div>
+							</div><div class="item-box">
+								<div class="item rel">
+									<p class="mail">dev@iphylosophy.ru</p>
+									<p class="item-info">Электронная почта для вопросов и предложений</p>
+									<div class="icon mail bg_con"></div>
+								</div>
+							</div><div class="item-box">
+								<div class="item rel">
+									<a href="https://vk.com/iphylosophy"><div class="social-img vk ibm bg_con"></div></a>
+									<a href="https://www.instagram.com/iphylosophy.ru/"><div class="social-img inst ibm bg_con"></div></a>
+									<p class="item-info">Мы в социальных сетях</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><div class="modal-feedback">
+			<div class="modal-holder">
+				<div class="typical-scroll-block m2 scrollbar-offset-minus-right">
+					<div class="cover-block">
+						<div class="feedback-holder">
+							<h2 class="menu-item">Контакты</h2>
+							<form>
+								<!-- Hidden Required Fields -->
+								<input type="hidden" name="project_name" value="Философия Идиллии">
+								<input type="hidden" name="admin_email" value="dev@iphylosophy.ru">
+								<input type="hidden" name="form_subject" value="Контактная информация клиента">
+								<!-- END Hidden Required Fields -->
+								<input type="text" name="Имя" placeholder="Имя" required><br>
+								<input type="text" name="E-mail" placeholder="E-mail"><br>
+								<input type="text" name="Телефон" placeholder="Телефон" required><br>
+								<textarea name="Сообщение" placeholder="Сообщение"></textarea><br>
+								<button>Отправить сообщение</button>
+							</form>
+						</div><div class="item-block second">
+								<div class="item-box">
+									<div class="item rel">
+										<p class="phone">+7 928 637 20 19</p>
+										<p class="phone sec">+7 929 858 95 57</p>
+										<p class="item-info">Ежедневно с <span class="num">9:00</span> до <span class="num">21:00</span></p>
+										<div class="icon phone bg_con"></div>
+									</div>
+								</div><div class="item-box">
+									<div class="item rel">
+										<p class="mail">dev@iphylosophy.ru</p>
+										<p class="item-info">Электронная почта для вопросов и предложений</p>
+										<div class="icon mail bg_con"></div>
+									</div>
+								</div><div class="item-box">
+									<div class="item rel">
+										<a href="https://vk.com/iphylosophy"><div class="social-img vk ibm bg_con"></div></a>
+										<a href="https://www.instagram.com/iphylosophy.ru/"><div class="social-img inst ibm bg_con"></div></a>
+										<p class="item-info">Мы в социальных сетях</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div><div class="hideline"></div><div class="close-feedback"></div>
+		</div><section id="particles-js2" class="l2-head bg_cov">
+			<h1 class="l2-title">Дизайн</h1>
+		</section><section class="l2-section des bbox">
+			<div class="l2-holder">
+				<div class="l2-img dezing bg_con"></div><div class="article-cover">
+				<div class="l2-article promotion">
+					<h2 class="article-title desing">Креативно и прагматично</h2><p class="article-info">Умеем создавать быстрые, удобные и привлекательные сайты. Ищем и находим эффективные решения для лучшего взаимодействия пользователя с сайтом. Внимательно относимся к структуре и деталям — каждый элемент несет свою особую функцию. Уникальный дизайн, функционал и интерфейс вместе создают удобную среду для клиента.</p>
+				</div><div class="promo-holder bbox">
+						<div class="corner-line1"></div>
+						<div class="corner-line2"></div>
+						<p class="promo-info">Яркий, продуманный дизайн — для нас цель номер один</p>
+				</div></div>
+			</div>
+		</section><section class="experience">
+			<div class="exp-holder">
+				<div class="exp-img bg_cov"></div>
+				<div class="exp-info">Дизайн помогает пользователям выбрать ваш продукт</div>
+			</div>
+		</section><section class="principles bbox">
+			<div class="principles-holder">
+				<h2 class="article-title pr">Принципы</h2>
+				<div class="service-advantage">
+					<div class="advantage-box">
+						<div class="adv-img bg_con"><div class="adv-icon i1 bg_con"></div></div><h3 class="adv-title">Точные сроки</h3><p class="adv-info">Клиент знает сроки сдачи этапов прорисовки макетов с самого начала</p>
+					</div><div class="advantage-box">
+					<div class="adv-img bg_con"><div class="adv-icon i2 bg_con"></div></div><h3 class="adv-title">Индивидуальный подход</h3><p class="adv-info">Не рассматриваем шаблонных решений. Каждый клиент — это навая задача</p>
+				</div><div class="advantage-box">
+				<div class="adv-img bg_con"><div class="adv-icon i3 bg_con"></div></div><h3 class="adv-title">Внимание к деталям</h3><p class="adv-info">Именно детали отличают хороший дизайн от обычного</p>
+			</div>
+		</div><div class="smart-box"><div class="tablet-img bg_con"></div><div class="exp-info bbox"><p class="si">Наш дизайн работает на всех устройствах</p></div></div>
+			</div>
+		</section><section class="design-logo">
+			<div class="holder">
+				<div class="info-block">
+					<h2 class="article-title">Разработка логотипа</h2><p class="article-info">Логотип — важнейший элемент имиджа компании. Мы создадим неповторимый знак для вашего бизнеса.</p><p class="article-price">Стоимость услуги - <span class="price">10 000</span> р.</p>
+					<div class="button d1">
+						<div class="slide1 abs100 bbox">
+							<p class="button-info">Заказать</p><div class="helper"></div>
+							</div><div class="slide2 abs100 bbox">
+							<p class="button-info">Заказать</p><div class="helper"></div>
+						</div>
+					</div>
+				</div><div class="deslog-img bg_con"></div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-holder">
+				<div class="footer-va ibm">
+					<div class="footer-item">
+						<a href="/"><div class="logo bg_con"></div></a>
+						<p class="desc">Создание, продвижение и поддержка сайтов</p>
+						<p class="cop">&#169; <span class="birthday">2016</span> Философия Идиллии</p>
+					</div><div class="footer-item contacts">
+						<div class="phone-box">
+							<div class="item-line">
+								<div class="icon phone bg_con"></div><a href="" class="number">+7 928 637 20 19</a>
+							</div><div class="item-line">
+								<a href="" class="number">+7 929 858 95 57</a>
+							</div>
+						</div><div class="mail-box">
+							<div class="icon mail bg_con"></div><a href="" class="mail">dev@iphylosophy.ru</a>
+						</div>
+					</div><div class="footer-item social">
+						<a href="https://vk.com/iphylosophy"><div class="item-line">
+							<div class="icon vk bg_con"></div><p class="social-link">Наша группа в Вконтакте</p>
+						</div></a><a href="https://www.instagram.com/iphylosophy.ru/"><div class="item-line">
+							<div class="icon inst bg_con"></div><p class="social-link">Инстаграмм</p>
+						</div></a>
+					</div><div class="footer-item">
+						<p class="feedback">Обратная связь</p>
+					</div>
+				</div><div class="helper"></div>
+			</div>
+		</footer>
+		
+		<script src="/assets/js/scripts.min.js"></script>
+	</body>
+</html>

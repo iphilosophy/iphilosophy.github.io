@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="Description" content=""/>
+	<meta name="DC.description" content=""/>
+	<meta name="Keywords" content=""/>
+	<meta name="DC.subject" content=""/>
+	<meta name="format-detection" content="telephone=yes"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="DC.title" content=""/>
+	<title>Page Template</title>
+	<link rel="stylesheet" type="text/css" href="/assets/css/jquery.bxslider.css">
+	<link rel="stylesheet" href="/assets/css/main.min.css">
+</head>
+<style type="text/css">
+.loaded .preload-cover{
+	visibility:hidden;
+	opacity:0;
+}
+.loaded .loader{
+	visibility:hidden;
+	opacity:0;
+}
+.preload-cover{
+	position:fixed;width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	background:#000b18;
+	display:flex;
+	-ms-align-items:center;
+	align-items:center;
+	justify-content:center;
+	z-index:10000;
+	visibility:visible;
+	transition:all 0.5s 0.6s ease;
+}
+.loader,.loader:before,.loader:after{
+	border:2px solid transparent;
+	border-radius:50%;
+	border-top-color:#fff;
+	transition:all 0.5s ease
+}
+.loader{
+	width:100px;
+	height:100px;
+	position:relative;
+	animation:spin 1s infinite linear;
+}
+.loader:before,.loader:after{
+	content:'';
+	position:absolute
+}
+.loader:before{
+	top:10px;
+	bottom:10px;
+	left:10px;
+	right:10px;
+	animation:spin 2s infinite linear;
+}
+.loader:after{
+	top:22px;
+	bottom:22px;
+	left:22px;
+	right:22px;
+	animation:spin 1s infinite linear;
+}
+
+@-webkit-keyframes spin {
+	from {
+		transform:rotate(0deg);  
+	}
+	to { 
+		transform:rotate(360deg);
+	}
+}
+
+@-o-keyframes spin {
+	from { 
+		transform:rotate(0deg); 
+	}
+	to {
+		transform:rotate(360deg);
+	} 
+}
+
+@-moz-keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	} 
+}
+
+@keyframes spin {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+</style>
+	<body>
+		<div class="preload-cover">
+		<div class="loader"></div>
+	</div><header class="headTwo">
+			<a href="/"><div class="logo bg_con"></div></a>
+			<div class="hamburger-box">
+				<div class="line l1"></div>
+				<div class="line l2"></div>
+				<div class="line l3"></div>
+			</div>
+		</header><div class="modal-menu fixed100">
+			<div class="holder">
+				<div class="typical-scroll-block m1 scrollbar-offset-minus-right">
+					<div class="cover-block">
+						<div class="item-block">
+							<div class="item-box">
+								<a href="/"><div class="item tr">
+									<h2 class="menu-item">Главная</h2>
+									<p class="item-info">Создание, поддержка, продвижение</p>
+								</div></a>
+							</div><div class="item-box">
+								<a href="/create"><div class="item tr">
+									<h2 class="menu-item">Создание сайтов</h2>
+									<p class="item-info">Быстрые, удобные и оптимизированные</p>
+								</div></a>
+							</div><div class="item-box">
+								<a href="/support"><div class="item tr">
+									<h2 class="menu-item">Поддержка</h2>
+									<p class="item-info">Своевременно оказываем помощь</p>
+								</div></a>
+							</div><div class="item-box">
+								<a href="/promotion"><div class="item tr">
+									<h2 class="menu-item">Продвижение</h2>
+									<p class="item-info">Контекстная реклама и SEO оптимизация</p>
+								</div></a>
+							</div><div class="item-box">
+								<a href="/design"><div class="item tr">
+									<h2 class="menu-item">Дизайн</h2>
+									<p class="item-info">Индивидуальный и креативный</p>
+								</div></a>
+							</div>
+						</div><div class="item-block second">
+							<div class="item-box fbk">
+								<div class="item tr">
+									<h2 class="menu-item">Контакты</h2>
+									<p class="item-info">Связаться с нами, оставить сообщение</p>
+								</div>
+							</div><div class="item-box">
+								<div class="item rel">
+									<p class="phone">+7 928 637 20 19</p>
+									<p class="phone sec">+7 929 858 95 57</p>
+									<p class="item-info">Ежедневно с <span class="num">9:00</span> до <span class="num">21:00</span></p>
+									<div class="icon phone bg_con"></div>
+								</div>
+							</div><div class="item-box">
+								<div class="item rel">
+									<p class="mail">dev@iphylosophy.ru</p>
+									<p class="item-info">Электронная почта для вопросов и предложений</p>
+									<div class="icon mail bg_con"></div>
+								</div>
+							</div><div class="item-box">
+								<div class="item rel">
+									<a href="https://vk.com/iphylosophy"><div class="social-img vk ibm bg_con"></div></a>
+									<a href="https://www.instagram.com/iphylosophy.ru/"><div class="social-img inst ibm bg_con"></div></a>
+									<p class="item-info">Мы в социальных сетях</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><div class="modal-feedback">
+			<div class="modal-holder">
+				<div class="typical-scroll-block m2 scrollbar-offset-minus-right">
+					<div class="cover-block">
+						<div class="feedback-holder">
+							<h2 class="menu-item">Контакты</h2>
+							<form>
+								<!-- Hidden Required Fields -->
+								<input type="hidden" name="project_name" value="Философия Идиллии">
+								<input type="hidden" name="admin_email" value="dev@iphylosophy.ru">
+								<input type="hidden" name="form_subject" value="Контактная информация клиента">
+								<!-- END Hidden Required Fields -->
+								<input type="text" name="Имя" placeholder="Имя" required><br>
+								<input type="text" name="E-mail" placeholder="E-mail"><br>
+								<input type="text" name="Телефон" placeholder="Телефон" required><br>
+								<textarea name="Сообщение" placeholder="Сообщение"></textarea><br>
+								<button>Отправить сообщение</button>
+							</form>
+						</div><div class="item-block second">
+								<div class="item-box">
+									<div class="item rel">
+										<p class="phone">+7 928 637 20 19</p>
+										<p class="phone sec">+7 929 858 95 57</p>
+										<p class="item-info">Ежедневно с <span class="num">9:00</span> до <span class="num">21:00</span></p>
+										<div class="icon phone bg_con"></div>
+									</div>
+								</div><div class="item-box">
+									<div class="item rel">
+										<p class="mail">dev@iphylosophy.ru</p>
+										<p class="item-info">Электронная почта для вопросов и предложений</p>
+										<div class="icon mail bg_con"></div>
+									</div>
+								</div><div class="item-box">
+									<div class="item rel">
+										<a href="https://vk.com/iphylosophy"><div class="social-img vk ibm bg_con"></div></a>
+										<a href="https://www.instagram.com/iphylosophy.ru/"><div class="social-img inst ibm bg_con"></div></a>
+										<p class="item-info">Мы в социальных сетях</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div><div class="hideline"></div><div class="close-feedback"></div>
+		</div><section id="particles-js2" class="l2-head bg_cov">
+			<h1 class="l2-title">Поддержка Сайтов</h1>
+		</section><section class="sup-sec bbox">
+			<div class="sup-holder">
+				<div class="sup-img bg_con"></div>
+					<div class="info-cover">
+						<div class="sup-block">
+							<h2 class="sup-title">Развитие интернет-проекта</h2><p class="sup-info">Мониторинг, развитие существующего и создание нового функционала, анализ работы, анализ поведения и внесение изменений. Контроль данных на сайте. Полноценное сопровождение интернет-проекта. В отличие от разовых работ, сотрудничество на абонентской основе гарантирует максимально быстрый запуск работ.</p>
+						</div><div class="promo-holder bbox">
+								<div class="corner-line1"></div>
+								<div class="corner-line2"></div>
+								<p class="promo-info">Поддержка роботоспособности сайта 7 дней в неделю, 24 часа в сутки</p>
+							</div>
+					</div>
+				<div class="sup-back-img bg_con"></div>
+			</div>
+		</section><section class="sup-package">
+			<div class="pack-holder">
+				<div class="pack-box b1">
+					<h3 class="pack-title">Стандарт</h3><div class="pack-info-cover">
+						<div class="pack-line">
+							<div class="pack-img bg_con"></div><p class="pack-info">Размещение сайта на нашем хостинге</p>
+						</div><div class="pack-line">
+							<div class="pack-img bg_con"></div><p class="pack-info">Поддержка работоспособности сайта 24 часа в сутки</p>
+						</div><div class="pack-line">
+							<div class="pack-img bg_con"></div><p class="pack-info">Настройка корпоративной почты</p>
+						</div><div class="pack-line">
+							<div class="pack-img bg_con"></div><p class="pack-info">Настройка Яндекс.Метрики</p>
+						</div><div class="pack-line">
+							<div class="pack-img bg_con"></div><p class="pack-info">Своевременная оплата хостинга и домена</p>
+						</div>
+					</div>
+					<p class="pack-price"><span class="pr">2 500</span> р.</p>
+					<div class="button s1">
+							<div class="slide1 abs100 bbox">
+								<p class="button-info">Подключить</p><div class="helper"></div>
+							</div><div class="slide2 abs100 bbox">
+							<p class="button-info">Подключить</p><div class="helper"></div>
+							</div>
+					</div>
+				</div><div class="pack-box b2">
+					<h3 class="pack-title">Расширенный</h3><div class="pack-info-cover">
+						<div class="pack-line">
+							<div class="pack-img bg_con"></div><p class="pack-info">Пакет Стандарт</p>
+						</div><div class="pack-line">
+							<div class="pack-img bg_con"></div><p class="pack-info">Ежемесячный Back-up</p>
+						</div><div class="pack-line">
+							<div class="pack-img bg_con"></div><p class="pack-info">Создание и редактирование новых разделов</p>
+						</div><div class="pack-line">
+							<div class="pack-img bg_con"></div><p class="pack-info">Круглосуточные консультации по техническим вопросам</p>
+						</div><div class="pack-line">
+							<div class="pack-img bg_con"></div><p class="pack-info">Оптимизация сайта по новым стандартам семантики и микроразметки</p>
+						</div>
+					</div>
+					<p class="pack-price"><span class="pr">5 000</span> р.</p>
+					<div class="button s2">
+							<div class="slide1 abs100 bbox">
+								<p class="button-info">Подключить</p><div class="helper"></div>
+							</div><div class="slide2 abs100 bbox">
+							<p class="button-info">Подключить</p><div class="helper"></div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section><section class="why-sup bg_cov">
+			<div class="why-sup-holder">
+				<h2 class="sup-title">Зачем нужна поддержка?</h2>
+				<div class="why-sup-container">
+					<div class="why-sup-box">
+						<div class="why-sup-img bg_con"><div class="img i1 bg_con"></div></div><div class="sup-text-holder">
+							<h3 class="sup-info-title">Стабильная работа сайта</h3><p class="sup-info">Немаловажным моментом в жизни любого сайта является его стабильная работа, особенно при высокой посещаемости ресурса, и стабильность, напрямую зависит, от стабильной работы хостинга на котором он расположен.</p>
+						</div>
+					</div><div class="why-sup-box">
+						<div class="why-sup-img i2 bg_con"><div class="img i2 bg_con"></div></div><div class="sup-text-holder">
+							<h3 class="sup-info-title">Экономия времени</h3><p class="sup-info">Самостоятельная поддержка сайта будет занимать много личного времени, которое лучше пустить на развитие бизнеса. Доверьте эту работу профессионалам. Экономия времени — одно из главных преимуществ нашей поддержки.</p>
+						</div>
+					</div><div class="why-sup-box">
+						<div class="why-sup-img i3 bg_con"><div class="img i3 bg_con"></div></div><div class="sup-text-holder">
+							<h3 class="sup-info-title">Экономия денег</h3><p class="sup-info">Полный комплект необходимых услуг в одном месте. Не нужно переплачивать за то, в чем не нуждаетесь.</p>
+						</div>
+					</div><div class="why-sup-box">
+						<div class="why-sup-img i4 bg_con"><div class="img i4 bg_con"></div></div><div class="sup-text-holder">
+							<h3 class="sup-info-title">Быстрое решение проблем</h3><p class="sup-info">Быстрое реагирование команды специалистов, позволит максимально комфортно решить любые нюансы и вопросы клиентов.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-holder">
+				<div class="footer-va ibm">
+					<div class="footer-item">
+						<a href="/"><div class="logo bg_con"></div></a>
+						<p class="desc">Создание, продвижение и поддержка сайтов</p>
+						<p class="cop">&#169; <span class="birthday">2016</span> Философия Идиллии</p>
+					</div><div class="footer-item contacts">
+						<div class="phone-box">
+							<div class="item-line">
+								<div class="icon phone bg_con"></div><a href="" class="number">+7 928 637 20 19</a>
+							</div><div class="item-line">
+								<a href="" class="number">+7 929 858 95 57</a>
+							</div>
+						</div><div class="mail-box">
+							<div class="icon mail bg_con"></div><a href="" class="mail">dev@iphylosophy.ru</a>
+						</div>
+					</div><div class="footer-item social">
+						<a href="https://vk.com/iphylosophy"><div class="item-line">
+							<div class="icon vk bg_con"></div><p class="social-link">Наша группа в Вконтакте</p>
+						</div></a><a href="https://www.instagram.com/iphylosophy.ru/"><div class="item-line">
+							<div class="icon inst bg_con"></div><p class="social-link">Инстаграмм</p>
+						</div></a>
+					</div><div class="footer-item">
+						<p class="feedback">Обратная связь</p>
+					</div>
+				</div><div class="helper"></div>
+			</div>
+		</footer>
+		
+		<script src="/assets/js/scripts.min.js"></script>
+	</body>
+</html>
